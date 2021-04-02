@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 const Admin = () => {
     const [ProductEvents, setEvent] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/events')
+        fetch('https://banana-cobbler-93121.herokuapp.com/events')
             .then(response => response.json())
             .then(data => setEvent(data))
     }, [])
@@ -22,7 +22,7 @@ const Admin = () => {
             price: data.price
         };
         console.log(eventData)
-        const url = `http://localhost:5000/addEvent`;
+        const url = `https://banana-cobbler-93121.herokuapp.com/addEvent`;
 
         fetch(url, {
             method: 'POST',
@@ -64,7 +64,7 @@ const Admin = () => {
     }
     const HandelDelete = id => {
         console.log(id)
-           fetch(`http://localhost:5000/deleteProduct/${id}`, {
+           fetch(`https://banana-cobbler-93121.herokuapp.com/deleteProduct/${id}`, {
                method:'DELETE'
            })
            .then(response => response.json())

@@ -34,6 +34,7 @@ const Header = () => {
               </Typography>
               <Button color="inherit" component={Link} to='/home'>Home</Button>
               <Button color="inherit" component={Link} to='/orders'>Orders</Button>
+              <Button color="inherit" component={Link} to='/check-out/:id'>CheckOut</Button>
               <Button color="inherit" component={Link} to='/Admin'>Admin</Button>
               <Button color="inherit" component={Link} to='/login'>Login</Button>
             </Toolbar>

@@ -12,6 +12,7 @@ import Header from './component/Header/Header';
 import Orders from './component/Orders/Orders';
 import PrivateRoute from './component/PrivetRoute/PrivetRoute';
 import Login from './component/Login/Login';
+import CheckOut from './component/CheckOut/CheckOut';
 
 export const UserContext = createContext();
 
@@ -28,9 +29,12 @@ function App(props) {
           <PrivateRoute path="/admin" exact>
             <Admin></Admin>
           </PrivateRoute>
-          <Route path="/orders" exact>
+          <PrivateRoute exact path="/check-out/:_id" exact>
+            <CheckOut loginUser={loginUser}></CheckOut>
+          </PrivateRoute>
+          <PrivateRoute exact path="/orders" exact>
             <Orders></Orders>
-          </Route>
+          </PrivateRoute>
           <Route path="/login" exact>
             <Login></Login>
           </Route>
