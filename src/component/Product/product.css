@@ -1,0 +1,39 @@
+
+.img{
+    width: 200px;
+}
+.img img{
+    max-width:100%;
+}
+.price{
+    display: inline-block;
+    color:rgb(91, 185, 3);
+}
+.name{
+    height: 70px;
+}
+.admin-manage{
+    background-color: blue;
+    height:100%
+}
+p{
+    margin-bottom: 0px;
+}
+.list-item{
+    display: inline-block;
+    width:30px
+}
+.list-item-name{
+    display: inline-block;
+    width:390px
+}
+
+.list-item-price{
+    display: inline-block;
+    width:80px;
+}
+
+.btn-width {
+    width: 268px;
+    margin: 10px 34px;
+}
