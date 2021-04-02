@@ -31,6 +31,7 @@ function App(props) {
           </PrivateRoute>
           <PrivateRoute exact path="/check-out/:_id" exact>
             <CheckOut loginUser={loginUser}></CheckOut>
+            <CheckOut ></CheckOut>
           </PrivateRoute>
           <PrivateRoute exact path="/orders" exact>
             <Orders></Orders>
